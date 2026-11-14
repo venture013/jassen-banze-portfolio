@@ -363,6 +363,8 @@ section { position: relative; }
 .card-img img { width: 112%; max-width: none; height: 100%; margin-left: -6%; object-fit: cover; will-change: transform; transition: scale 700ms var(--ease-out); }
 .card-img--light { background: #f4f4f2; }
 .card-img--light img { object-fit: contain; width: 100%; margin-left: 0; padding: 4%; }
+.card-img--shot { aspect-ratio: 1200 / 1310; }
+.card-img--shot img { padding: 0; }
 @media (hover: hover) and (pointer: fine) { .card-img:hover img { scale: 1.04; } }
 .card-meta { display: grid; gap: 0.15rem; margin-top: 0.9rem; }
 .card-t { font-weight: 600; font-size: 1.1rem; color: var(--ink); letter-spacing: -0.02em; }
