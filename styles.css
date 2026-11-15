@@ -177,8 +177,8 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spa
 .ring { position: absolute; inset: 0; width: 100%; height: 100%; animation: spin 40s linear infinite; }
 .ring text { font: 500 8.4px var(--sans); letter-spacing: 2.6px; fill: var(--navy); }
 @keyframes spin { to { transform: rotate(1turn); } }
-.headshot { position: absolute; left: 0; right: 0; bottom: 9%; width: 62%; margin-inline: auto; mix-blend-mode: multiply; }
-.headshot img { width: 100%; -webkit-mask-image: linear-gradient(to bottom, #000 78%, transparent 100%); mask-image: linear-gradient(to bottom, #000 78%, transparent 100%); }
+.headshot { position: absolute; inset: 9%; display: flex; align-items: flex-end; justify-content: center; border-radius: 50%; overflow: hidden; mix-blend-mode: multiply; }
+.headshot img { width: 75.6%; flex: none; -webkit-mask-image: linear-gradient(to bottom, #000 78%, transparent 100%); mask-image: linear-gradient(to bottom, #000 78%, transparent 100%); }
 .chip {
   position: absolute; display: grid; gap: 0.1rem; padding: 0.7rem 1rem; border-radius: 14px;
   background: rgba(255, 255, 255, 0.92); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);

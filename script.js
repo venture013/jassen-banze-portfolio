@@ -168,7 +168,7 @@
     const loop = () => {
       const x = sx.step(), y = sy.step();
       chips.forEach((c) => { const k = parseFloat(c.dataset.depth || '1'); c.style.translate = `${x * 14 * k}px ${y * 12 * k}px`; });
-      headshot.style.translate = `${x * -6}px ${y * -4}px`;
+      headshot.firstElementChild.style.translate = `${x * -6}px ${y * -4}px`;
       raf = sx.settled() && sy.settled() ? 0 : requestAnimationFrame(loop);
     };
     $('.hero').addEventListener('pointermove', (e) => {
